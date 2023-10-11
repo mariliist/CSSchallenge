@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(22, 76, 100);
+}
+
+.main {
+    border: 1px solid white;
+    margin: 20px auto;
+    width: 600px;
+    height: 602px;
+}
+
+.main div {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#red {
+    background-color: red;
+    animation: red 5s;
+    position: relative;
+}
+
+@keyframes red {
+    0% {
+        top: -200px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+
+#yellow {
+    background-color: yellow;
+    animation: yellow 5s;
+
+}
+
+@keyframes yellow {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%
+    }
+
+}
+
+
+#green {
+    background-color: green;
+    animation: green 2s
+    infinite;
+
+}
+
+
+@keyframes green {
+    0% {
+        rotate: y 0deg;
+    }
+
+    100% {
+        rotate: y 160deg;
+    }
+}
